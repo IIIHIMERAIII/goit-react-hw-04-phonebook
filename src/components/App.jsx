@@ -61,6 +61,7 @@ const App = () => {
             onChange={onFilterChange}
             value={filter}
           />
+          {contacts.length > 0 ? 'Contacts' : 'No contacts'}
           <Phonebook
             data={contacts}
             onDelete={onDelete}
